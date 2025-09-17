@@ -1,0 +1,10 @@
+
+import { ethers } from "ethers";
+
+const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/YOUR_KEY");
+const address = "0xWalletAddress";
+
+async function getBalance() {
+  const balance = await provider.getBalance(address);
+  console.log("ETH balance:", ethers.formatEther(balance));
+}
