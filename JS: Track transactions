@@ -1,0 +1,4 @@
+async function trackTx(txHash) {
+  const tx = await provider.getTransaction(txHash);
+  console.log("Tx details:", tx);
+}
